@@ -22,6 +22,7 @@ This project provides a mechanism to integrate **NetBox** with **UniFi**, allowi
   - `python-dotenv`
   - `python-slugify`
   - `urllib3`
+  - `icecream`
 
 ## Installation
 

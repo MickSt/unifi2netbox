@@ -453,7 +453,7 @@ def process_controller(unifi_url, unifi_username, unifi_password, unifi_mfa_secr
                     logger.warning(f"No match found for Ubiquity site: {site_name}. Skipping...")
                     continue
 
-                futures.append(executor.submit(process_site, unifi, nb, site_obj.name, nb_site, nb_ubiquity, tenant))
+                futures.append(executor.submit(process_site, unifi, nb, site_name, nb_site, nb_ubiquity, tenant))
 
             # Wait for all site-processing threads to complete
             for future in as_completed(futures):
